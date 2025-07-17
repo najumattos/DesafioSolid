@@ -1,6 +1,7 @@
 ﻿using System;
 namespace DesafioSolid
 {
+    //Princípio da Responsabilidade Única (Single Responsibility Principle - S):
     internal class SRP
     {
         private double Peso;
@@ -17,7 +18,7 @@ namespace DesafioSolid
         };
 
         #region ViolacaoDoSRP
-        public void CalcularIMC()
+        public void CalcularClassificarIMC()
         {
             //Calcula o valor do IMC
             Imc = (Peso / (Altura * Altura)) * 100;
