@@ -1,30 +1,30 @@
 ﻿using System;
-namespace DesafioSolid
+
+namespace DesafioSolid.SingleResponsibility
 {
-    //Princípio da Responsabilidade Única (Single Responsibility Principle - S):
-    internal class SRP
+    /*CORREÇÃO Princípio da Responsabilidade Única (Single Responsibility Principle - S):
+O método CalcularClassificarIMC() foi dividido dois métodos: Calcular() e Classificar()*/
+    internal class Correcao
     {
         private double Peso;
         private double Altura;
         private double Imc;
         private readonly string[] Classificacao = new string[]
         {
-            "Abaixo do Peso",
-            "Peso Ideal",
-            "Sobrepeso",
-            "Obesidade I",
-            "Obesidade II",
-            "Obesidade III"
+        "Abaixo do Peso",
+        "Peso Ideal",
+        "Sobrepeso",
+        "Obesidade I",
+        "Obesidade II",
+        "Obesidade III"
         };
-
-        #region ViolacaoDoSRP
-        public void CalcularClassificarIMC()
+        public void CalcularIMC()
         {
-            //Calcula o valor do IMC
-            Imc = (Peso / (Altura * Altura)) * 100;
+            Imc = Peso / (Altura * Altura);
+        }
 
-
-            //Além de Calcular o IMC, o método também está classificando-o
+        public void ClassificarIMC()
+        {
             if (Imc < 18.5)
             {
                 Console.WriteLine($"Seu IMC é {Imc:F2} - {Classificacao[0]}"); //Abaixo do Peso
@@ -51,18 +51,5 @@ namespace DesafioSolid
                 Console.WriteLine($"Seu IMC é {Imc:F2} - {Classificacao[4]}"); //Obesidade III
             }
         }
-        #endregion
-
-        #region CorrecaoDoSRP
-        public void Calcular()
-        {
-            //Calcular IMC
-        }
-
-        public void Classificar()
-        {
-            //classificar de acordo com o IMC calculado no método Calcular()
-        }
-        #endregion
     }
 }
