@@ -8,5 +8,6 @@ namespace DesafioSolid
 {
     internal class DIP
     {
+        //Princípio da Inversão de Dependência (Dependency Inversion Principle - D):
     }
 }
