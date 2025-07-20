@@ -43,7 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DIP.cs" />
+    <Compile Include="DependencyInversion\Correcao\Interfaces\IEletrecista.cs" />
+    <Compile Include="DependencyInversion\Correcao\Interfaces\IEncanador.cs" />
+    <Compile Include="DependencyInversion\Correcao\Models\EletrecistaAna.cs" />
+    <Compile Include="DependencyInversion\Correcao\Models\EletrecistaJulia.cs" />
+    <Compile Include="DependencyInversion\Correcao\Models\Encanador.cs" />
+    <Compile Include="DependencyInversion\Correcao\Models\ProgramaPrincipal.cs" />
+    <Compile Include="DependencyInversion\Correcao\Models\ProjetoCasa.cs" />
     <Compile Include="InterfaceSegregation\Correcao\Interfaces\IEstoque.cs" />
     <Compile Include="InterfaceSegregation\Correcao\Interfaces\IVender.cs" />
     <Compile Include="InterfaceSegregation\Correcao\Interfaces\IReceberPagamento.cs" />
@@ -56,10 +62,10 @@
     <Compile Include="LiskovSubstitution\Correcao\Models\Funcionario.cs" />
     <Compile Include="LiskovSubstitution\Violacao\Interfaces\IFuncionario.cs" />
     <Compile Include="LiskovSubstitution\Violacao\Models\Vendedor.cs" />
-    <Compile Include="LSP.cs" />
-    <Compile Include="OCP.cs" />
-    <Compile Include="OpenClosed\Correcao\Interfaces\IRestaurante.cs" />
-    <Compile Include="OpenClosed\Correcao\Models\Restaurante.cs" />
+    <Compile Include="OpenClosed\Correcao\Interfaces\IPedido.cs" />
+    <Compile Include="OpenClosed\Correcao\Models\Lanche.cs" />
+    <Compile Include="OpenClosed\Correcao\Models\Pizza.cs" />
+    <Compile Include="OpenClosed\Correcao\Models\Sobremesa.cs" />
     <Compile Include="OpenClosed\Violacao\Interfaces\ILanchonete.cs" />
     <Compile Include="OpenClosed\Violacao\Models\Restaurante.cs" />
     <Compile Include="Program.cs" />
@@ -71,8 +77,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DependencyInversion\Correcao\Interfaces\" />
-    <Folder Include="DependencyInversion\Correcao\Models\" />
     <Folder Include="DependencyInversion\violacao\Interfaces\" />
     <Folder Include="DependencyInversion\violacao\Models\" />
   </ItemGroup>
