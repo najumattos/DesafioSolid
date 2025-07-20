@@ -52,9 +52,16 @@
     <Compile Include="InterfaceSegregation\Correcao\Models\Vendedora.cs" />
     <Compile Include="InterfaceSegregation\violacao\Interfaces\IFuncionario.cs" />
     <Compile Include="InterfaceSegregation\violacao\Models\Vendedora.cs" />
-    <Compile Include="ISP.cs" />
+    <Compile Include="LiskovSubstitution\Correcao\Interfaces\IGerenciar.cs" />
+    <Compile Include="LiskovSubstitution\Correcao\Models\Funcionario.cs" />
+    <Compile Include="LiskovSubstitution\Violacao\Interfaces\IFuncionario.cs" />
+    <Compile Include="LiskovSubstitution\Violacao\Models\Vendedor.cs" />
     <Compile Include="LSP.cs" />
     <Compile Include="OCP.cs" />
+    <Compile Include="OpenClosed\Correcao\Interfaces\IRestaurante.cs" />
+    <Compile Include="OpenClosed\Correcao\Models\Restaurante.cs" />
+    <Compile Include="OpenClosed\Violacao\Interfaces\ILanchonete.cs" />
+    <Compile Include="OpenClosed\Violacao\Models\Restaurante.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingleResponsibility\Correcao.cs" />
@@ -68,11 +75,6 @@
     <Folder Include="DependencyInversion\Correcao\Models\" />
     <Folder Include="DependencyInversion\violacao\Interfaces\" />
     <Folder Include="DependencyInversion\violacao\Models\" />
-    <Folder Include="LiskovSubstitution\Correcao\Interfaces\" />
-    <Folder Include="LiskovSubstitution\Correcao\Models\" />
-    <Folder Include="LiskovSubstitution\violacao\" />
-    <Folder Include="OpenClosed\Correcao\" />
-    <Folder Include="OpenClosed\violacao\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

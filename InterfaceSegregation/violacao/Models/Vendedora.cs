@@ -1,5 +1,4 @@
 ﻿using DesafioSolid.InterfaceSegregation.violacao.Interfaces;
-using System;
 
 namespace DesafioSolid.InterfaceSegregation.violacao.Models
 {
@@ -8,12 +7,12 @@ namespace DesafioSolid.InterfaceSegregation.violacao.Models
         //a classe Vendedora é obrigada a ter metodos que não sao dela como ControlarEstoque() e ReceberPagamento()
         public void ControlarEstoque()
         {
-            throw new NotImplementedException();
+            //metodo inutilizável
         }
 
         public void ReceberPagamento()
         {
-            throw new NotImplementedException();
+            //metodo inutilizável
         }
 
         public void Vender()
