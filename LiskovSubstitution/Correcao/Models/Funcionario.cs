@@ -2,21 +2,24 @@
 
 namespace DesafioSolid.LiskovSubstitution.Correcao.Models
 {
-    internal class Funcionario
+    //CORREÇÃO Liskov Substitution Principle - LSP
+    internal class Funcionario : IVender, IEstoque
     {
+        /*Aqui o funcionario recebe apenas suas responsabilidades,
+         podendo substituir IVender ou IEstoque, respeitando tambem
+         o Princípio da Segregação de Interfaces (ISP).
+         É importante tomar cuidado para não atribuir responsabilidades demais a uma 
+         classe e violar o princípio da responsabilidade única (SRP).
+        */
+        public void ControlarMercadoria()
+        {
+            //Método herdado do IEstoque
+        }
         public void Vender()
         {
-            //Qualquer Funcionario pode vender
+            //Método herdado do IVender
         }
     }
 
-    internal class Gerente : Funcionario, IGerenciar
-    {
-        /*Além de Gerenciar, o Gerente é capaz de executar a função de qualquer funcionario,
-        logo,o gerente pode subtituir qualquer funcionario*/
-        public void Gerenciar()
-        {
-            //Gerenciar
-        }
-    }
+    
 }

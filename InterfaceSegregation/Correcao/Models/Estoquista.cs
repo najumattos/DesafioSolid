@@ -2,9 +2,7 @@
 
 namespace DesafioSolid.InterfaceSegregation.Correcao.Models
 {
-    /*Nesse caso o Estoquista tem mais de uma função porém é importante evitar que uma mesma
-     classe implemente varias funções pois isso viola o Princípio da Responsabilidade Única
-    */
+    //aqui o estoquista recebe apenas os métodos referentes a sua função
     internal class Estoquista : IEstoque, IVender
     {
 

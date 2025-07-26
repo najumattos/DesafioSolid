@@ -58,13 +58,17 @@
     <Compile Include="InterfaceSegregation\Correcao\Models\Vendedora.cs" />
     <Compile Include="InterfaceSegregation\violacao\Interfaces\IFuncionario.cs" />
     <Compile Include="InterfaceSegregation\violacao\Models\Vendedora.cs" />
+    <Compile Include="LiskovSubstitution\Correcao\Interfaces\IEstoque.cs" />
     <Compile Include="LiskovSubstitution\Correcao\Interfaces\IGerenciar.cs" />
+    <Compile Include="LiskovSubstitution\Correcao\Interfaces\IVender.cs" />
     <Compile Include="LiskovSubstitution\Correcao\Models\Funcionario.cs" />
+    <Compile Include="LiskovSubstitution\Correcao\Models\Gerente.cs" />
     <Compile Include="LiskovSubstitution\Violacao\Interfaces\IFuncionario.cs" />
     <Compile Include="LiskovSubstitution\Violacao\Models\Vendedor.cs" />
     <Compile Include="OpenClosed\Correcao\Interfaces\IPedido.cs" />
     <Compile Include="OpenClosed\Correcao\Models\Lanche.cs" />
     <Compile Include="OpenClosed\Correcao\Models\Pizza.cs" />
+    <Compile Include="OpenClosed\Correcao\Models\Restaurante.cs" />
     <Compile Include="OpenClosed\Correcao\Models\Sobremesa.cs" />
     <Compile Include="OpenClosed\Violacao\Interfaces\ILanchonete.cs" />
     <Compile Include="OpenClosed\Violacao\Models\Restaurante.cs" />

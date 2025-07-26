@@ -9,7 +9,7 @@
         {
             //Calcula o valor do IMC
           
-            //Além de Calcular o IMC, o método também recebeu a função de Classificar o IMC
+            //Além de Calcular o IMC, o método também classifica  IMC
         }
     }
 }
