@@ -8,8 +8,6 @@ namespace DesafioSolid.LiskovSubstitution.Correcao.Models
         /*Aqui o funcionario recebe apenas suas responsabilidades,
          podendo substituir IVender ou IEstoque, respeitando tambem
          o Princípio da Segregação de Interfaces (ISP).
-         É importante tomar cuidado para não atribuir responsabilidades demais a uma 
-         classe e violar o princípio da responsabilidade única (SRP).
         */
         public void ControlarMercadoria()
         {

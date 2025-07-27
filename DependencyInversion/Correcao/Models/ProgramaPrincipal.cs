@@ -4,7 +4,7 @@ namespace DesafioSolid.DependencyInversion.Correcao.Models
     internal class ProgramaPrincipal
     {
         public static void Main()
-        {
+        {           
             IEletrecista eletrecistaEscolhida = new EletrecistaAna();
             IEncanador encanadorEscolhido = new Encanador();
 

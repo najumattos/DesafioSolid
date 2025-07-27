@@ -50,6 +50,10 @@
     <Compile Include="DependencyInversion\Correcao\Models\Encanador.cs" />
     <Compile Include="DependencyInversion\Correcao\Models\ProgramaPrincipal.cs" />
     <Compile Include="DependencyInversion\Correcao\Models\ProjetoCasa.cs" />
+    <Compile Include="DependencyInversion\violacao\Interfaces\IEletrecista.cs" />
+    <Compile Include="DependencyInversion\violacao\Models\EletrecistaAna.cs" />
+    <Compile Include="DependencyInversion\violacao\Models\EletrecistaJulia.cs" />
+    <Compile Include="DependencyInversion\violacao\Models\ProjetoCasa.cs" />
     <Compile Include="InterfaceSegregation\Correcao\Interfaces\IEstoque.cs" />
     <Compile Include="InterfaceSegregation\Correcao\Interfaces\IVender.cs" />
     <Compile Include="InterfaceSegregation\Correcao\Interfaces\IReceberPagamento.cs" />
@@ -80,9 +84,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DependencyInversion\violacao\Interfaces\" />
-    <Folder Include="DependencyInversion\violacao\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
